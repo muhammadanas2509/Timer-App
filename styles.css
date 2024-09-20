@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #414498;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    border: 3px solid rgb(15, 15, 78);
+    box-shadow: 3px 5px;
+}
+
+.time-display {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: rgb(9, 9, 131);
+    color: aliceblue;
+}
+
+.controls button:hover {
+    background-color: rgb(114, 114, 242);
+}
+
+#inputTime {
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    overflow: hidden;
+    background-color: rgb(205, 205, 237);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make container more flexible */
+        padding: 15px;
+    }
+
+    .time-display {
+        font-size: 40px; /* Decrease font size on smaller screens */
+    }
+
+    #inputTime {
+        width: 100%; /* Input field takes full width */
+    }
+
+    .controls button {
+        font-size: 20px; /* Decrease button size */
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Further adjust container width on very small screens */
+        padding: 10px;
+    }
+
+    .time-display {
+        font-size: 30px; /* Reduce the size for very small screens */
+    }
+
+    .controls button {
+        font-size: 18px; /* Further reduce button size */
+        padding: 5px 8px;
+    }
+}
